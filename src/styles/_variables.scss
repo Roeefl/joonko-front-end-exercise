@@ -1,0 +1,25 @@
+$spacer: 16px;
+
+// Please note: After discussing with Itai over the phone, I've adjusted the font-sizes throughout the app slightly to match the XD design as closely as possible,
+// Instead of matching the specified font-sizes on XD
+$font-size-base: 16px;
+
+$font-size-xs: $font-size-base * 0.75;
+$font-size-sm: $font-size-base * 0.9;
+$font-size-md: $font-size-base * 1.1;
+$font-size-lg: $font-size-base * 1.25;
+$font-size-xl: $font-size-lg * 1.5;
+
+$h1-font-size: $font-size-base * 2.5;
+
+$page-padding-y: $spacer * 11.125;
+$page-padding-x: $spacer * 15;
+
+$primary: #010A60;
+$secondary: #FFA52E;
+
+$dark: #00000029;
+$white: white;
+$light-gray: #707070;
+
+$error: #ED6982;

@@ -1,0 +1,65 @@
+@import 'styles/index';
+
+.container {
+  box-shadow: 0px 3px 16px $dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $spacer;
+  padding-top: $spacer * 3;
+
+  @include desktop-only() {
+    width: 24vw;
+  }
+
+  @include mobile-only() {
+    margin-top: $spacer * 4;
+    width: 70vw;
+  }
+
+  .header {
+    margin-bottom: $spacer / 2;
+  }
+
+  .form {
+    margin: $spacer * 2 0;
+    width: 90%;
+  }
+
+  .privacyPolicy {
+    margin: $spacer * 1.5 $spacer;
+    cursor: pointer;
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    font-size: $font-size-sm;
+    font-weight: 300;
+
+    .description {
+      margin-left: $spacer / 2;
+    }
+
+    & > input {
+      margin-top: 2px;
+      height: $spacer;
+      width: $spacer;
+      appearance: none;
+      border: 1px solid $error;
+      outline: none;
+      cursor: pointer;
+
+      &:checked {
+        border-color: #010A60;
+
+        & + span::before {
+          content: '\2713';
+          display: block;
+          color: $primary;
+          position: absolute;
+          left: 2px;
+          top: -1px;
+        }
+      }
+    }
+  }
+}

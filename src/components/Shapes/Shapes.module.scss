@@ -1,0 +1,30 @@
+@import 'styles/index';
+
+.shape {
+  position: absolute;
+
+  &.shape-1 {
+    top: 343px;
+    left: 61px;
+  }
+
+  &.shape-2 {
+    top: 159px;
+    left: 901px;
+  }
+
+  &.shape-3 {
+    top: 617px;
+    left: 840px;
+  }
+
+  &.shape-4 {
+    top: 230px;
+    left: 1533px;
+  }
+
+  &.shape-5 {
+    top: 885px;
+    left: 968px;
+  }
+}
